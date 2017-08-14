@@ -1,0 +1,22 @@
+{
+  "name": "fileuploader-new",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "wdio"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "body-parser": "^1.17.2",
+    "chai": "^4.1.1",
+    "drag-drop": "^2.13.2",
+    "express": "^4.15.4",
+    "hjs": "0.0.6",
+    "socketio": "^1.0.0",
+    "wdio-mocha-framework": "^0.5.10",
+    "webdriverio": "^4.8.0"
+  }
+}

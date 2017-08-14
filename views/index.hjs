@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>{{ title }}</title>
+</head>
+
+<body>
+
+  <h1> WTF </h1>
+</body>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+
+<script>
+document.ondragover = document.ondrop = (ev) => {
+  ev.preventDefault()
+}
+
+document.body.ondrop = (ev) => {
+  console.log(ev.dataTransfer.files[0].path)
+  ev.preventDefault()
+}
+
+
+</script>
+
+
+</html>
