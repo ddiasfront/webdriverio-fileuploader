@@ -1,26 +1,76 @@
 <html>
+
 <head>
     <title>{{ title }}</title>
 </head>
 
+<style>
+    #dropArea {
+      width: 100%;
+      border: 1px solid #666;
+      height: 100%;
+    }
+</style>
+
 <body>
 
   <h1> WTF </h1>
+
+  <div id="dropArea" ondragover="allowDrop(event)"  ondrop="drop(event)">
+
+  </div>
+
 </body>
 
 <script src="/socket.io/socket.io.js"></script>
 <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
 
 <script>
-document.ondragover = document.ondrop = (ev) => {
-  ev.preventDefault()
+
+function allowDrop(ev) {
+    ev.preventDefault();
 }
 
-document.body.ondrop = (ev) => {
-  console.log(ev.dataTransfer.files[0].path)
-  ev.preventDefault()
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
 }
 
+var dropArea = document.getElementById('dropArea');
+
+console.log(dropArea);
+
+function traverseFileTree(item, path) {
+  path = path || "";
+  if (item.isFile) {
+    // Get file
+    item.file(function(file) {
+      console.log("File:", path + file.name);
+    });
+  } else if (item.isDirectory) {
+    // Get folder contents
+    var dirReader = item.createReader();
+    dirReader.readEntries(function(entries) {
+      for (var i=0; i<entries.length; i++) {
+        traverseFileTree(entries[i], path + item.name + "/");
+      }
+    });
+  }
+}
+
+dropArea.addEventListener("drop", function(event) {
+  event.preventDefault();
+  console.log(event);
+  var items = event.dataTransfer.items;
+  for (var i=0; i<items.length; i++) {
+    // webkitGetAsEntry is where the magic happens
+    var item = items[i].webkitGetAsEntry();
+    if (item) {
+      traverseFileTree(item);
+    }
+  }
+}, false);
 
 </script>
 
