@@ -1,8 +1,11 @@
 var bodyParser = require('body-parser');
-var app = require('express')();
+var express = require('express');
+var app = express();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
+var path = require('path');
 
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.set('view engine', 'hjs');
 
@@ -22,6 +25,11 @@ app.post('/test-page', function(req, res) {
         city = req.body.city;
     console.log(name, city);
     // ...
+});
+
+app.post('/file-uploader', function(req, res, next) {
+    console.log(req.body);
+    console.log(req.files);
 });
 
 http.listen(3000, function(){
