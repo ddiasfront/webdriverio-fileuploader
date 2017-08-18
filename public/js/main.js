@@ -1,13 +1,23 @@
-$("#dropZoo").dropzone({ url: "/upload" });
+var myDropzone = new Dropzone("#dropZoo", { url: "/upload"});
 
-// function postFiles(file) {
-// 	$.ajax({
-// 	  url: "/file-uploader",
-// 	  type: "POST",
-// 	  data: {id: 'wtf'},
-// 	  dataType: "text/html"
-// 	});
-// }
+myDropzone.on("sending", function(file, xhr, formData) {
+  formData.append("fullPath", file.fullPath);
+  console.log(formData);
+  console.log(file.fullPath);
+});
+
+// dropZoo.addEventListener("drop", function(event) {
+//   event.preventDefault();
+//   var data = event.dataTransfer.getData("text");
+//   var items = event.dataTransfer.items;
+//   for (var i=0; i<items.length; i++) {
+//     // webkitGetAsEntry is where the magic happens
+//     var item = items[i].webkitGetAsEntry();
+//     if (item) {
+//       traverseFileTree(item);
+//     }
+//   }
+// }, false);
 
 // function allowDrop(ev) {
 //     ev.preventDefault();
@@ -19,7 +29,7 @@ $("#dropZoo").dropzone({ url: "/upload" });
 //     // ev.target.appendChild(document.getElementById(data));
 // }
 
-// var dropArea = document.getElementById('dropArea');
+// var dropZoo = document.getElementById('dropZoo');
 
 // function traverseFileTree(item, path) {
 //   path = path || "";
@@ -44,16 +54,3 @@ $("#dropZoo").dropzone({ url: "/upload" });
 //     });
 //   }
 // }
-
-// dropArea.addEventListener("drop", function(event) {
-//   event.preventDefault();
-//   var data = event.dataTransfer.getData("text");
-//   var items = event.dataTransfer.items;
-//   for (var i=0; i<items.length; i++) {
-//     // webkitGetAsEntry is where the magic happens
-//     var item = items[i].webkitGetAsEntry();
-//     if (item) {
-//       traverseFileTree(item);
-//     }
-//   }
-// }, false);

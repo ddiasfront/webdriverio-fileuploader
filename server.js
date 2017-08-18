@@ -20,22 +20,20 @@ app.get('/', function(req, res){
 });
 
 app.post('/upload', function(req, res) {
-  if (!req.files)
-    return res.status(400).send('No files were uploaded.');
- 
-  // The name of the input field (i.e. "sampleFile") is used to retrieve the uploaded file 
-  let sampleFile = req.files.sampleFile;
-
-  console.log(req.files.file);
-  // console.log(sampleFile);
-
-  // Use the mv() method to place the file somewhere on your server 
-  req.files.file.mv('./' + req.files.file.name, function(err) {
-    if (err)
-      return res.status(500).send(err);
- 
-    res.send('File uploaded!');
-  });
+  // FS CRIAR DIRETORIO DE ACORDO COM O FULLPATH 
+    // SE O DIRETORIO EXISTIR PASSAR PARA A O PROXIMO PASSO QUE É MOVER O ARQUIVO PARA OS DIRETÓRIOS
+    if (!req.files)
+      return res.status(400).send('No files were uploaded.');
+    // The name of the input field (i.e. "sampleFile") is used to retrieve the uploaded file 
+    let sampleFile = req.files.sampleFile;
+    console.log(req.body.fullPath);
+    // Use the mv() method to place the file somewhere on your server 
+    req.files.file.mv('./' + req.files.file.name, function(err) {
+      if (err)
+        return res.status(500).send(err);
+  
+      res.send('File uploaded!');
+    });
 });
 
 app.listen(3000, function(){

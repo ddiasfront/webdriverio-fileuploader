@@ -1,0 +1,444 @@
+/* roy jones */
+/* remover dotted lines dos links */
+#nossa-gente a {
+  outline:0;
+}
+
+/* banner principal */
+#nossa-gente .banner {
+  width: 940px;
+  height: 300px;
+  margin-top: 50px;
+  background: url(/ArquivosEstaticos/oi/style/images/sobre-a-oi/gente/portal-de-talentos/banner-nossa-gente-01.png);
+}
+
+/* miolo da pagina */
+#nossa-gente section {
+  float: left;
+  width: 700px;
+  margin: 20px 20px 20px 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#nossa-gente section h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  letter-spacing: -1px;
+  color: #222;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#nossa-gente section .subtitulo {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  color: #666;
+}
+
+.bloco01, .bloco02, .bloco03{
+  display:inline-block;
+}
+
+
+.bloco01 .container-blocos-praticas-basicas{
+  margin: 10px 0 0px;
+}
+
+.bloco02 .container-blocos-praticas-basicas{
+}
+
+.bloco03 .container-blocos-praticas-basicas{
+  margin: 0px 0 40px;
+}
+
+
+
+/* blocos de praticas basicas */
+#nossa-gente section .container-blocos-praticas-basicas {
+  float: left;
+  height: auto;
+  width: 233px;
+  padding: 0 0 0 0px;
+  
+}
+
+#nossa-gente section .container-blocos-praticas-basicas .top {
+  border-bottom: 2px solid #333;
+  display: inline-block;
+  height: 82px;
+  width: 209px;
+  position: relative;
+}
+
+#nossa-gente section .container-blocos-praticas-basicas .top .number {
+  position: absolute;
+  bottom: 0;
+  font-family: simplon_bpregular;
+  font-size: 57px;
+  font-weight: bold;
+  margin: 0;
+  color: #333;
+  left: 0;
+}
+
+#nossa-gente section .container-blocos-praticas-basicas .top .number-title {
+  position: absolute;
+  left: 35px;
+  bottom: 0;
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #333;
+  width: 106px;
+}
+#nossa-gente section .container-blocos-praticas-basicas .top .number-title.one {
+  left: 40px;
+}
+
+#nossa-gente section .container-blocos-praticas-basicas .bottom {
+  font-size: 12px;
+  color: #333;
+  clear: both;
+  margin: 10px 0 0 0;
+  padding: 0;
+  line-height: 16px;
+  width: 204px;
+}
+
+/* box qualidade de vida */
+#nossa-gente section .qualidade-de-vida {
+  width: 700px;
+  display: block;
+  clear: both;
+  margin: 10px 0 20px 0;
+}
+
+#nossa-gente section .qualidade-de-vida h3 {
+  background: url(/ArquivosEstaticos/oi/style/images/sobre-a-oi/gente/portal-de-talentos/header-section-box-700.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  font-size: 24px;
+  line-height: 60px;
+  letter-spacing: -1px;
+  color: #333;
+  margin: 0;
+  padding: 0 0 0 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+#nossa-gente section .qualidade-de-vida .container-conteudo {
+  background: url(/ArquivosEstaticos/oi/style/images/sobre-a-oi/gente/portal-de-talentos/bg-section-box-qualidade-de-vida.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  width: 700px;
+  height: 223px;
+}
+
+#nossa-gente section .qualidade-de-vida .container-conteudo p {
+  float: left;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333;
+  width: 300px;
+  padding: 20px;
+  margin: 0;
+}
+
+#nossa-gente section .qualidade-de-vida .container-conteudo ul {
+  float: left;
+  width: 280px;
+  padding: 12px 0;
+  margin: 0 0 0 60px;
+}
+
+#nossa-gente section .qualidade-de-vida .container-conteudo ul li {
+  list-style: outside;
+  list-style:none;
+  font-size: 12px;
+  line-height: 18px;
+  color: #333;
+  padding: 0;
+  margin: 0;
+}
+
+/* box pessoas com deficiencia e programas de voluntariado */
+#nossa-gente section .box-340-padrado {
+  float: left;
+  width: 340px;
+  display: block;
+}
+
+#nossa-gente section .box-340-padrado.espacamento {
+  margin-left: 20px;
+}
+
+#nossa-gente section .box-340-padrado h3 {
+  background: url(/ArquivosEstaticos/oi/style/images/sobre-a-oi/gente/portal-de-talentos/header-section-box-340.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  font-size: 24px;
+  line-height: 60px;
+  letter-spacing: -1px;
+  color: #333;
+  margin: 0;
+  padding: 0 0 0 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+#nossa-gente section .box-340-padrado .container-box-340 {
+  position: relative;
+  height: 160px;
+  padding: 20px 19px 15px 19px;
+  background-color: #fff;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+#nossa-gente section .box-340-padrado .container-box-340 .container-icone-left {
+  float: left;
+}
+
+#nossa-gente section .box-340-padrado .container-box-340 .texto-explicatorio {
+  float: left;
+  width: 190px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #333;
+  margin: 0;
+  padding: 0 0 0 15px;
+}
+
+#nossa-gente section .box-340-padrado .container-box-340 .saiba-mais {
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+  margin: 0;
+  padding-top: 25px;
+}
+
+#nossa-gente section .box-340-padrado .container-box-340 .link {
+  font-size: 12px;
+  color: #909090;
+  font-weight: bold;
+  margin: 0;
+  padding-top: 10px;
+}
+
+#nossa-gente section .box-340-padrado .container-box-340 .link a:link,
+#nossa-gente section .box-340-padrado .container-box-340 .link a:visited {
+  color: #909090;
+  text-decoration: none;
+}
+
+#nossa-gente section .box-340-padrado .container-box-340 .link a:hover {
+  color: #a02cff;
+  text-decoration: underline;
+}
+
+#nossa-gente section .box-340-padrado .container-box-340 .clear {
+  clear: both;
+}
+
+#nossa-gente section .box-340-padrado .container-box-340-footer {
+  background: url(/ArquivosEstaticos/oi/style/images/sobre-a-oi/gente/portal-de-talentos/footer-section-box-340.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 5px;
+}
+
+/* aside */
+#nossa-gente aside {
+  width: 220px;
+  min-height: 600px;
+  float: left;
+  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#nossa-gente aside h3 {
+  background: url(/ArquivosEstaticos/oi/style/images/sobre-a-oi/gente/portal-de-talentos/header-aside-box-220.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  line-height: 48px;
+  margin: 0;
+  padding: 0 0 0 15px;
+  font-weight: bold;
+  color: #333;
+  font-size: 22px;
+}
+
+/* depoimentos - sidebar */
+#nossa-gente aside .container-depoimentos {
+  background-color: #fff;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  display: block;
+}
+
+#nossa-gente aside .bloco-depoimento {
+  margin: 0 20px;
+  padding: 20px 0;
+  
+}
+#depoimentos .bloco-depoimento{
+  border-bottom: 1px solid #ccc;
+}
+#depoimentos .bloco-depoimento:last-child{
+ border-bottom: none; 
+}
+
+
+
+#nossa-gente aside .bloco-depoimento.last {
+  border-bottom: 0;
+}
+
+#nossa-gente aside .bloco-depoimento img {
+  float: left;
+  border: 0;
+}
+
+#nossa-gente aside .bloco-depoimento .destaque {
+  float: left;
+  font-size: 12px;
+  font-weight: bold;
+  color: #333;
+  padding: 0 0 0 0px;
+  margin: 0;
+  line-height: 16px;
+}
+
+#nossa-gente aside .bloco-depoimento .destaque a:link,
+#nossa-gente aside .bloco-depoimento .destaque a:visited {
+  color: #e05206;
+  text-decoration: none;
+}
+
+#nossa-gente aside .bloco-depoimento .destaque a:hover {
+  color: #e05206;
+  text-decoration: underline;
+}
+
+#nossa-gente aside .bloco-depoimento .depoimento {
+  clear: both;
+  font-size: 11px;
+  line-height: 16px;
+  font-style: italic;
+  color: #333;
+  margin: 0;
+  padding: 10px 0;
+}
+
+#nossa-gente aside .bloco-depoimento .autor-depoimento {
+  font-size: 12px;
+  color: #666;
+  margin: 0;
+  padding: 0;
+}
+
+#nossa-gente aside .footer-container-depoimentos {
+  background: url(/ArquivosEstaticos/oi/style/images/sobre-a-oi/gente/portal-de-talentos/footer-aside-box-220.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: block;
+  height: 5px;
+}
+
+/* banner cadastro de curriculo e vagas */
+#nossa-gente aside .banner-cadastre-curriculo {
+  background: url(/ArquivosEstaticos/oi/style/images/sobre-a-oi/gente/portal-de-talentos/box-220-cadastro-de-curriculo.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  margin-top: 10px;
+}
+
+#nossa-gente aside .banner-cadastre-curriculo p {
+  font-size: 16px;
+  line-height: 18px;
+  color: #222;
+  padding: 16px 0 25px 85px;
+  font-weight: bold;
+}
+
+#nossa-gente aside a:link,
+#nossa-gente aside .banner-cadastre-curriculo p a:link,
+#nossa-gente aside .banner-cadastre-curriculo p a:visited,
+#nossa-gente aside .banner-cadastre-curriculo p a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+#modal-tip-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #222;
+}
+
+.modal-tip {
+  display: none;
+  margin-top: -90px;
+  width: 640px;
+  height: 335px;
+  padding: 29px;
+  background: white;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.3);
+}
+.modal-tip .modal-tip-arrow {
+  position: absolute;
+  top: 70px;
+  right: -31px;
+  background: transparent url('../../../images/sobre-a-oi/gente/portal-de-talentos/modal-tip-arrow.png?1341896026') no-repeat;
+  width: 31px;
+  height: 52px;
+  text-indent: 110%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.modal-tip .close-modal-tip {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  background: transparent url('../../../images/sobre-a-oi/gente/portal-de-talentos/modal-tip-close.png?1341895825') no-repeat;
+  width: 17px;
+  height: 17px;
+  font: 0/0 serif;
+  text-shadow: none;
+  color: transparent;
+}
+
+
+#nossa-gente .box-340-padrado p.link,
+#nossa-gente .box-340-padrado p.saiba-mais {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+
+#nossa-gente .box-340-padrado p.saiba-mais {
+  line-height: 16px;
+}
+
+
+#nossa-gente aside .banner-cadastre-curriculo span {
+  font-size:14px;
+  color: #222;
+}
